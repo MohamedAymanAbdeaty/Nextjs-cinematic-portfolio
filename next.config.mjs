@@ -24,15 +24,8 @@ const nextConfig = {
   async headers() {
     return [
       {
-        // Long-lived cache for videos
-        source: "/videos/:path*",
-        headers: [
-          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
-        ],
-      },
-      {
-        // Long-lived cache for images/photos
-        source: "/photo/:path*",
+        // Long-lived cache for portfolio imagery
+        source: "/images/:path*",
         headers: [
           { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
         ],
@@ -40,14 +33,6 @@ const nextConfig = {
 
       {
         source: "/llms.txt",
-        headers: [
-          { key: "Content-Type", value: "text/plain; charset=utf-8" },
-          { key: "Cache-Control", value: "public, max-age=86400" },
-          { key: "X-Robots-Tag", value: "all" },
-        ],
-      },
-      {
-        source: "/llms-full.txt",
         headers: [
           { key: "Content-Type", value: "text/plain; charset=utf-8" },
           { key: "Cache-Control", value: "public, max-age=86400" },

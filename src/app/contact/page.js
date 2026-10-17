@@ -1,21 +1,17 @@
-import PageShell from "@/components/PageShell";
-import ContactPage from "@/views/contact";
+import ContactView from "@/components/page-views/ContactView";
 
 export const metadata = {
-  title:       "Contact — Hire a Portfolio Designer, Website Developer, Video Editor or Photo Editor",
-  description: "Get in touch with Sarang to hire a freelance portfolio designer, website developer, video editor, or photo editor. Available for projects worldwide. Fast response, competitive pricing.",
-  keywords:    ["hire website developer", "hire video editor", "hire photo editor", "hire portfolio designer", "freelance contact", "get quote website design"],
-  alternates:  { canonical: "https://sarang-space.site/contact" },
+  title: "Contact",
+  description:
+    "Contact Mohamed Ayman Abdelaty for AI engineering roles, research collaboration, or select freelance builds — email, WhatsApp, LinkedIn or GitHub.",
+  alternates: { canonical: "/contact" },
   openGraph: {
-    title: "Hire Sarang — Portfolio Designer, Website Developer, Video Editor & Photo Editor",
-    description: "Contact Sarang for freelance website development, video editing, photo editing, and portfolio design projects. Available worldwide.",
+    title: "Contact — Mohamed Ayman Abdelaty, AI Engineer",
+    description:
+      "Open to AI engineering roles, research collaboration, and select freelance builds. Fast response via email or WhatsApp.",
   },
 };
 
 export default function Page() {
-  return (
-    <PageShell>
-      <ContactPage />
-    </PageShell>
-  );
+  return <ContactView />;
 }
