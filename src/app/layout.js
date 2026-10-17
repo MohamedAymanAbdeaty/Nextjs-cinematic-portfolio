@@ -68,7 +68,7 @@ export const metadata = {
       "A cinematic five-act portfolio covering AI engineering, systems thinking, research and leadership.",
     images: [
       {
-        url: "/images/photo_samsung_cohort.jpg",
+        url: "/images/samsung/photo_samsung_cohort.jpg",
         width: 1200,
         height: 630,
         alt: `${site.name} — AI Engineer`,
@@ -81,7 +81,7 @@ export const metadata = {
     title: `${site.name} — AI Engineer & Systems Thinker`,
     description:
       "Cinematic five-act portfolio: AI engineering, 21 verified credentials, three in-depth case studies.",
-    images: ["/images/photo_samsung_cohort.jpg"],
+    images: ["/images/samsung/photo_samsung_cohort.jpg"],
   },
 
   robots: {

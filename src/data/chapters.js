@@ -57,19 +57,19 @@ export const chapters = [
     ],
     photos: [
       {
-        src: "/images/photo_samsung_team.jpg",
+        src: "/images/samsung/photo_samsung_team.jpg",
         title: "Presenting on Stage at Samsung Innovation Campus",
         location: "Smart Village, Giza • MCIT Auditorium",
         caption: "Standing with my capstone teammates in front of the 'Meet Our Team' LED wall ('MOhamed Ayman' featured top-left).",
       },
       {
-        src: "/images/photo_samsung_pitch.jpg",
+        src: "/images/samsung/photo_samsung_pitch.jpg",
         title: "Live Capstone Pitch: 'The Problem We Are Solving'",
         location: "Samsung Innovation Campus • Final Defense",
         caption: "Breaking down real-world user pain points and system architecture during the live project defense.",
       },
       {
-        src: "/images/photo_samsung_cohort.jpg",
+        src: "/images/samsung/photo_samsung_cohort.jpg",
         title: "The Top 5% Cohort Brotherhood",
         location: "Smart Village Training Hall • Oct 2025",
         caption: "Celebrating the completion of 200 intensive hours alongside fellow Samsung Innovation Campus scholars.",
@@ -368,13 +368,13 @@ export const chapters = [
     ],
     photos: [
       {
-        src: "/images/photo_microsoft_stage.jpg",
+        src: "/images/microsoft/photo_microsoft_stage.jpg",
         title: "Live Lecture: 'Why WE R Here ?!' — Microsoft Student Club NMU",
         location: "New Mansoura University • AI Committee Session",
         caption: "Leading weekly interactive workshops on Machine Learning, LLMs, and the art of Vibe Coding.",
       },
       {
-        src: "/images/photo_creativa_volunteer.jpg",
+        src: "/images/volunteering/photo_creativa_volunteer.jpg",
         title: "On the Ground at Creativa Innovation Hub",
         location: "Creativa Mansoura • Technology Volunteer & Data Analyst",
         caption: "Organizing 100+ attendee tech events and mentoring peers across the Delta tech ecosystem.",

@@ -8,9 +8,10 @@ import { site } from "@/data/profile";
 const ACTS = [
   { id: "identity", numeral: "I", label: "Identity" },
   { id: "microsoft", numeral: "II", label: "Leadership" },
-  { id: "research", numeral: "III", label: "Research" },
-  { id: "projects", numeral: "IV", label: "Projects" },
-  { id: "next", numeral: "V", label: "Next" },
+  { id: "internship", numeral: "III", label: "Internship" },
+  { id: "research", numeral: "IV", label: "Research" },
+  { id: "certifications", numeral: "V", label: "Proof" },
+  { id: "projects", numeral: "VI", label: "Work" },
 ];
 
 export default function Navbar() {

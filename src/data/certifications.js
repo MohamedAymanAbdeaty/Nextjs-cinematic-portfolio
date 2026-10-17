@@ -41,7 +41,7 @@ export const certifications = [
     chapterId: "chapter-6",
     chapterName: "Chapter 06",
     code: "Signed: Sayed Tag-Eldin",
-    image: "/images/cert_microsoft_ai_head.jpg",
+    image: "/images/microsoft/cert_microsoft_ai_head.jpg",
     note: "Awarded in appreciation of leading the AI Committee, authoring the 12-week ML curriculum, and mentoring student project teams.",
   },
   {
@@ -125,7 +125,7 @@ export const certifications = [
     chapterId: "chapter-1",
     chapterName: "Chapter 01",
     code: "Top 5% Scholar",
-    image: "/images/cert_samsung_cp.jpg",
+    image: "/images/samsung/cert_samsung_cp.jpg",
     note: "Earned after completing the 200-hour intensive curriculum and 3 capstone builds among the top 5% of applicants.",
   },
   {
@@ -161,7 +161,7 @@ export const certifications = [
     chapterId: "chapter-1",
     chapterName: "Chapter 01",
     code: "154721384762",
-    image: "/images/cert_iienstitu_ps.jpg",
+    image: "/images/problemsolving/cert_iienstitu_ps.jpg",
     note: "International certification in root-cause analysis, structured decision-making, and analytical problem decomposition.",
   },
   {

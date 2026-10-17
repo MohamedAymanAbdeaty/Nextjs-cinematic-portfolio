@@ -18,7 +18,7 @@ export const identity = {
     "Head of AI — Microsoft Student Club, NMU",
     "Co-author — IEEE MIUCC26 research",
   ],
-  image: "/images/photo_microsoft_stage.jpg",
+  image: "/images/microsoft/photo_microsoft_stage.jpg",
   imageAlt: "Mohamed Ayman leading an AI workshop at New Mansoura University",
   imageCaption: "Weekly AI session — Microsoft Student Club, New Mansoura University",
   ctaPrimary: "See the work",
@@ -39,7 +39,7 @@ export const moments = [
     lesson:
       "Discipline under complexity constraints. Every system I build since still rests on that foundation.",
     image: {
-      src: "/images/photo_samsung_team.jpg",
+      src: "/images/samsung/photo_samsung_team.jpg",
       alt: "Presenting at Samsung Innovation Campus with capstone teammates",
       caption:
         "Capstone teammates in front of the 'Meet Our Team' wall — Ministry of Communications, Smart Village.",
@@ -109,12 +109,12 @@ export const moments = [
       "Teaching forces clarity. If I cannot explain it to a first-year student, I do not understand it yet.",
     images: [
       {
-        src: "/images/portrait.jpg",
+        src: "/images/personal/photo_2026-10-13_17-17-04.jpg",
         alt: "Mohamed Ayman speaking at a Microsoft Student Club session at New Mansoura University",
         caption: "In front of the room — Microsoft Student Club, New Mansoura University.",
       },
       {
-        src: "/images/photo_creativa_volunteer.jpg",
+        src: "/images/volunteering/photo_creativa_volunteer.jpg",
         alt: "Volunteering at Creativa Innovation Hub",
         caption: "On the ground at Creativa Innovation Hub — Mansoura.",
       },

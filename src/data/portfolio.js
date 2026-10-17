@@ -66,6 +66,7 @@ export const portfolioSections = [
     ],
     image: "/images/star-union/558161862_122208285998047131_4299714710762306921_n - Copy.jpg",
     imageAlt: "S.T.A.R Union announcement poster naming Mohamed Ayman as AI Vice Head",
+    imagePlate: true,
     evidence: [
       { src: "/images/star-union/photo_2026-10-17_21-04-05.jpg", label: "Mentoring session with members" },
       { src: "/images/star-union/photo_2026-10-17_21-03-48.jpg", label: "Working through problems together" },
@@ -87,6 +88,7 @@ export const portfolioSections = [
     ],
     image: "/images/sprints/1791333991556.jpeg",
     imageAlt: "Sprints Virtual Internship certificate of achievement — AI Engineer, 120 hours",
+    imagePlate: true,
     evidence: [
       { src: "/images/sprints/1787796191109.jpeg", label: "Sprints virtual internship — AI engineering" },
       { src: "/images/cert_iti_tsql.jpg", label: "Back-end engineering practice — T-SQL at ITI" },
@@ -131,7 +133,6 @@ export const portfolioSections = [
     imageAlt: "University of Tokyo graduate research programme documentation",
     evidence: [
       { src: "/images/cert_utokyo_gci.jpg", label: "GCI World — Data Science & ML (The University of Tokyo)" },
-      { src: "/images/research/Mohamed Ayman.pdf", label: "Research record (PDF)" },
     ],
   },
   {
@@ -170,11 +171,8 @@ export const portfolioSections = [
       "Supported workshops and mentored peers through hands-on technical sessions.",
       "Kept separate from student-club leadership and from ordinary event attendance.",
     ],
-    image: "/images/photo_creativa_volunteer.jpg",
+    image: "/images/volunteering/photo_creativa_volunteer.jpg",
     imageAlt: "Mohamed Ayman volunteering at Creativa Innovation Hub",
-    evidence: [
-      { src: "/images/cert_iienstitu_ps.jpg", label: "Problem-solving certification" },
-    ],
   },
 ];
 

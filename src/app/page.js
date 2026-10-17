@@ -18,7 +18,7 @@ function Media({ section }) {
   if (!section.image) return null;
   return (
     <>
-      <Reveal mask className="doc-figure doc-figure--tall">
+      <Reveal mask className={`doc-figure doc-figure--tall${section.imagePlate ? " doc-figure--plate" : ""}`}>
         <button
           type="button"
           className="absolute inset-0 z-10"
@@ -91,7 +91,7 @@ function Certifications() {
       <div className="portfolio-section__grid">
         <div>
           <Reveal>
-            <p className="eyebrow">09 // VERIFIED LEARNING</p>
+            <p className="eyebrow">VERIFIED LEARNING</p>
             <h2 className="display portfolio-section__title">Curated evidence, not a wall.</h2>
             <p className="portfolio-section__summary">
               21 verified credentials, grouped by what they prove. Six are featured below because
