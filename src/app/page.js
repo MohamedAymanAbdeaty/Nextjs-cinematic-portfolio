@@ -156,37 +156,27 @@ export default function Home() {
       <Lightbox />
       <div className="relative z-10">
         <section id="identity" className="portfolio-hero">
-          <div className="portfolio-hero__copy">
+          <div className="portfolio-hero__backdrop" aria-hidden="true">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={site.heroFigure} alt="" />
+          </div>
+          <div className="portfolio-hero__figure">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={site.heroFigure} alt={`${site.name} speaking with a microphone at a student session`} fetchPriority="high" />
+          </div>
+          <div className="portfolio-hero__panel">
             <Reveal><p className="eyebrow">WHO AM I</p></Reveal>
             <Reveal delay={90}>
               <h1 className="display portfolio-hero__title">
                 I build AI systems<br />that <em>hold up.</em>
               </h1>
             </Reveal>
-            <Reveal delay={180}>
-              <p className="portfolio-hero__lede">
-                Grounded retrieval instead of guesswork. Agents that refuse to answer without
-                evidence. Infrastructure you can re-apply with a single command — across AI
-                engineering, research, and technical leadership.
-              </p>
-            </Reveal>
             <Reveal delay={260}>
-              <div className="portfolio-hero__meta">
-                <span>AI Engineer — ELITE.Org &amp; Sprints</span>
-                <span>Data Science — University of Tokyo</span>
-                <span>Head of AI — Microsoft Student Club</span>
-              </div>
-            </Reveal>
-            <Reveal delay={340}>
               <a className="btn-solid" href="#microsoft">Enter the experience <span aria-hidden="true">↓</span></a>
             </Reveal>
-          </div>
-          <div className="portfolio-hero__media">
-            <Reveal mask className="hero-figure">
-              {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={site.heroFigure} alt={`${site.name} speaking with a microphone at a student session`} fetchPriority="high" />
-            </Reveal>
-            <p className="doc-caption">Cairo &amp; New Mansoura, Egypt — in front of the room, and inside the system.</p>
+            <p className="doc-caption portfolio-hero__caption">
+              Cairo &amp; New Mansoura, Egypt — in front of the room, and inside the system.
+            </p>
             <p className="hero-cue" aria-hidden="true">SCROLL TO EXPLORE <span>↓</span></p>
           </div>
         </section>

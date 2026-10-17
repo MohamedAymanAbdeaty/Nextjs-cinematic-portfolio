@@ -13,7 +13,7 @@ export const site = {
   github: "https://github.com/MohamedAymanAbdeaty",
   githubHandle: "MohamedAymanAbdeaty",
   portrait: "/images/personal/photo_2026-10-13_17-17-04.jpg",
-  heroFigure: "/images/hero-figure.png",
+  heroFigure: "/images/personal/Thoughtful Conference Speaker in Teal Light.png",
   copyright: "MOHAMED AYMAN © 2026",
   baseUrl: "https://mohamedayman.vercel.app",
 };

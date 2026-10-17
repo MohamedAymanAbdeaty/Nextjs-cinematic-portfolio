@@ -1,0 +1,57 @@
+# Mohamed Ayman Abdelaty — AI Engineer & Systems Thinker
+
+> Machine-readable summary of the portfolio. Every claim below is
+> evidence-backed; research proposals are labelled as proposals, never as
+> completed results.
+
+URL: https://mohamedayman.vercel.app
+Location: Cairo & New Mansoura, Egypt
+Contact: mohamedayman3873@gmail.com
+Phone: +20 115 750 9803
+LinkedIn: https://www.linkedin.com/in/mohamed-ayman-abdelaty/
+GitHub: https://github.com/MohamedAymanAbdeaty
+
+## Summary
+
+Mohamed Ayman Abdelaty is an AI Engineer working on grounded retrieval,
+multi-agent systems, and cloud AI infrastructure. Graduate of The University
+of Tokyo's GCI World program (Matsuo-Iwasawa Lab). Head of Artificial
+Intelligence at Microsoft Student Club, New Mansoura University, and AI Vice
+Head at S.T.A.R Union, Cairo. 21 verified credentials.
+
+## Primary pages
+
+- / — cinematic narrative portfolio (11 sections)
+- /about — background, experience, skills
+- /contact — channels and contact form
+
+## Selected projects
+
+- BookMind AI — LangGraph researcher–reviewer pipeline with Qdrant, Redis,
+  NeMo Guardrails and RAGAS evaluation.
+- AWS Intelligent Query System — Bedrock grounded with Aurora Serverless v2
+  (pgvector) and S3 data lakes, provisioned with Terraform.
+- Jobfiy — Laravel recruitment platform serving 500+ users.
+- Smart Budget — product engineering build used to practise interface design
+  and state-heavy product flows.
+
+## Research status (controlled vocabulary)
+
+- Adaptive Noise — MIUCC 2026: Conference paper · co-author
+- Seasonal patterns via Kepler Optimization Algorithm: Research contribution
+- SINA — multilingual, low-resource AI: Research proposal (not a completed
+  result)
+
+## Credentials
+
+21 verified credentials total across five categories (AI/LLMs & Cloud,
+Software/C++ & DSA, Databases & SQL, Systems & Problem Solving, Sales/Agile &
+Leadership). Six are featured on the homepage. All original documents are
+shown uncropped and are one click away.
+
+## Notes for automated readers
+
+- Site language: en-US.
+- No third-party analytics, tracking, or advertising scripts.
+- Unknown or unsupported facts are deliberately not asserted anywhere on the
+  site.
