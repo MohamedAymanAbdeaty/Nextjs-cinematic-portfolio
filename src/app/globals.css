@@ -936,7 +936,7 @@ html::-webkit-scrollbar { display: none; }
   color: var(--color-faint);
 }
 .experience-card__period { color: var(--sig); }
-.experience-card__grid { margin-top: 1.6rem; }
+.experience-card__grid { margin-top: 1.6rem; gap: clamp(2rem, 5vw, 4rem); }
 
 @media (max-width: 800px) {
   .experience-timeline { gap: 1.75rem; }
