@@ -37,11 +37,11 @@ export default function Reveal({
           io.disconnect();
         }
       },
-      { threshold, rootMargin: "0px 0px -40px 0px" }
+      { threshold: 0 }
     );
     io.observe(el);
     return () => io.disconnect();
-  }, [threshold]);
+  }, []);
 
   if (mask) {
     // clip must live on an inner wrapper: clipped elements never intersect

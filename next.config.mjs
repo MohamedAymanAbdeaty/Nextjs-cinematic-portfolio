@@ -7,7 +7,7 @@ const nextConfig = {
 
   // ── Experimental ─────────────────────────────────────────────────
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
 
   // ── Image optimisation ────────────────────────────────────────────

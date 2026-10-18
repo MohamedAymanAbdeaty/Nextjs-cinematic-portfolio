@@ -8,11 +8,10 @@ import Cursor from "@/components/Cursor";
 import Lightbox, { openLightbox } from "@/components/Lightbox";
 import Reveal from "@/components/Reveal";
 import StoryChat from "@/components/StoryChat";
+import CertificateCarousel from "@/components/CertificateCarousel";
 import { site } from "@/data/profile";
 import { portfolioProjects, portfolioSections } from "@/data/portfolio";
 import { certifications, certCategories } from "@/data/certifications";
-
-const FEATURED_CERTS = ["v-utokyo", "v-samsung", "v-msc", "v-future-aws", "v-nvidia-llm", "v-shell"];
 
 function Media({ section }) {
   if (!section.image) return null;
@@ -80,7 +79,6 @@ function ExperienceSection({ section, index }) {
 }
 
 function Certifications() {
-  const featured = FEATURED_CERTS.map((id) => certifications.find((c) => c.id === id)).filter(Boolean);
   return (
     <section id="certifications" className="portfolio-section portfolio-section--proof">
       <div className="portfolio-section__index">
@@ -94,9 +92,8 @@ function Certifications() {
             <p className="eyebrow">VERIFIED LEARNING</p>
             <h2 className="display portfolio-section__title">Curated evidence, not a wall.</h2>
             <p className="portfolio-section__summary">
-              21 verified credentials, grouped by what they prove. Six are featured below because
-              they mark the largest jumps; every original document stays one click away, uncropped
-              and readable.
+              21 verified credentials on one rotating ring. Drag the circle — or click any plate —
+              and every original document stays one click away, uncropped and readable.
             </p>
             <ul className="cert-groups">
               {certCategories.filter((c) => c.key !== "all").map((c) => (
@@ -106,25 +103,7 @@ function Certifications() {
           </Reveal>
         </div>
         <div className="portfolio-section__media portfolio-section__media--certs">
-          <div className="cred-grid">
-            {featured.map((cert, i) => (
-              <Reveal key={cert.id} delay={i * 60}>
-                <button
-                  type="button"
-                  className="cred-card"
-                  onClick={() => openLightbox(cert.image, cert.name, `${cert.issuer} · ${cert.date}`)}
-                >
-                  <span className="cred-card__plate">
-                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                    <img src={cert.image} alt={cert.name} loading="lazy" />
-                  </span>
-                  <span className="cred-card__kicker">{cert.issuer}</span>
-                  <span className="cred-card__name">{cert.name}</span>
-                  <span className="cred-card__date">{cert.date}</span>
-                </button>
-              </Reveal>
-            ))}
-          </div>
+          <CertificateCarousel certificates={certifications} />
         </div>
       </div>
     </section>

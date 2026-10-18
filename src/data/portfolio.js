@@ -68,7 +68,7 @@ export const portfolioSections = [
     imageAlt: "S.T.A.R Union announcement poster naming Mohamed Ayman as AI Vice Head",
     imagePlate: true,
     evidence: [
-      { src: "/images/star-union/photo_2026-10-17_21-04-05.jpg", label: "Mentoring session with members" },
+      { src: "/images/star-union/photo_2026-10-17_21-04-36.jpg", label: "Mentoring session with members" },
       { src: "/images/star-union/photo_2026-10-17_21-03-48.jpg", label: "Working through problems together" },
     ],
   },
