@@ -136,6 +136,16 @@ export default function ResearchShowcase({ section, index }) {
             <p className="research__summary">{section.summary}</p>
           </Reveal>
 
+          {section.details?.length ? (
+            <Reveal delay={160}>
+              <ul className="portfolio-section__details research__details">
+                {section.details.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </Reveal>
+          ) : null}
+
           <Reveal delay={180}>
             <dl className="research__meta">
               {details.map((d) => (

@@ -7,7 +7,7 @@ import { site } from "@/data/profile";
 
 const ACTS = [
   { id: "identity", numeral: "I", label: "Identity" },
-  { id: "microsoft", numeral: "II", label: "Leadership" },
+  { id: "experience", numeral: "II", label: "Experience" },
   { id: "internship", numeral: "III", label: "Internship" },
   { id: "research", numeral: "IV", label: "Research" },
   { id: "certifications", numeral: "V", label: "Proof" },

@@ -1,77 +1,91 @@
 /* Verified professional narrative.
- * Order follows the required sequence: Microsoft → Union → AI Vice Head →
- * Internship → Systems thinking → Research → Samsung → Certifications →
- * Volunteering → Projects → Contact.
+ * Order follows the required sequence: Experience (MLSA → S.T.A.R Union) →
+ * Internship → Systems thinking → Research → Samsung → Volunteering →
+ * Certifications → Projects → Contact.
  * Every claim below is supported by an approved asset in /public/images or the
  * existing data layer. Nothing is invented.
  */
 
-export const portfolioSections = [
+/* ── Experience — consolidated leadership (two organizations) ─────── */
+export const experienceEntries = [
   {
-    id: "microsoft",
-    index: "01",
-    eyebrow: "COMMUNITY LEADERSHIP",
-    title: "Making AI legible to the room.",
-    organization: "Head of Artificial Intelligence — Microsoft Student Club, New Mansoura University",
+    id: "experience-mlsa",
+    organization: "Microsoft Learn Student Ambassadors (MLSA)",
+    role: "AI Head — Microsoft Learn Student Ambassadors, New Mansoura University",
+    location: "New Mansoura University",
     period: "2025 — 2026",
-    summary:
-      "A leadership chapter built on translating fast-moving AI ideas into a clear learning path: a 12-week roadmap, weekly sessions, and 100+ attendee workshops — work I did in public while writing about it for a 140K+ weekly audience.",
-    details: [
-      "Head of Artificial Intelligence, season 2025/2026, verified by certificate signed by the club's leadership.",
+    description:
+      "I lead AI-related activities and support technical learning within the Microsoft Learn Student Ambassadors community at New Mansoura University. My role involves facilitating AI learning sessions, contributing to technical events, and helping students engage with emerging technologies.",
+    highlights: [
       "Authored the 12-week AI roadmap and mentored 30+ members building their first projects.",
-      "The event photographs document live teaching inside a Microsoft Student Club setting.",
+      "Weekly sessions and 100+ attendee workshops — teaching in public while writing about it for a 140K+ weekly audience.",
+      "Season 2025/2026 role verified by the club's signed certificate.",
     ],
-    image: "/images/microsoft/1772371239731.jpeg",
-    imageAlt: "Mohamed Ayman holding the Microsoft Student Clubs — New Mansoura University flag at a technology expo",
-    evidence: [
-      { src: "/images/microsoft/photo_microsoft_stage.jpg", label: "Live AI session — New Mansoura University" },
-      { src: "/images/microsoft/all.jpeg", label: "Microsoft Student Clubs team — Techne Summit" },
-      { src: "/images/microsoft/cert_microsoft_ai_head.jpg", label: "Head of AI certificate (2025/2026)" },
-    ],
-  },
-  {
-    id: "student-union",
-    index: "02",
-    eyebrow: "ORGANIZATIONAL LEADERSHIP",
-    title: "Leadership is also logistics.",
-    organization: "S.T.A.R Union — Cairo",
-    period: "2025 — 2026",
-    summary:
-      "A separate student-organization thread: coordination, representation, and the unglamorous work that keeps a community moving beyond a single technical session.",
-    details: [
-      "Documented through a dedicated union archive of event and session photographs.",
-      "Kept deliberately distinct from the Microsoft Student Club experience.",
-      "Copy stays on documented organizational involvement rather than inferred hierarchy.",
-    ],
-    image: "/images/star-union/photo_2026-10-17_21-04-11.jpg",
-    imageAlt: "Study and planning session led by Mohamed Ayman with students taking notes",
-    evidence: [
-      { src: "/images/star-union/photo_2026-10-17_21-03-48.jpg", label: "Working session with the team" },
-      { src: "/images/star-union/photo_2026-10-17_21-04-36.jpg", label: "Session in progress" },
+    gallery: [
+      {
+        src: "/images/microsoft/1772371239731.jpeg",
+        label: "Tech expo — club flag",
+        alt: "Mohamed Ayman holding the Microsoft Student Clubs — New Mansoura University flag at a technology expo",
+      },
+      {
+        src: "/images/microsoft/photo_microsoft_stage.jpg",
+        label: "Live AI session — NMU",
+        alt: "Live AI session at New Mansoura University",
+      },
+      {
+        src: "/images/microsoft/all.jpeg",
+        label: "Techne Summit — team",
+        alt: "Microsoft Student Clubs team at Techne Summit",
+      },
+      {
+        src: "/images/microsoft/cert_microsoft_ai_head.jpg",
+        label: "AI Head certificate (2025/2026)",
+        alt: "Head of Artificial Intelligence certificate — season 2025/2026",
+        fit: "contain",
+      },
     ],
   },
   {
-    id: "vice-head",
-    index: "03",
-    eyebrow: "AI LEADERSHIP",
-    title: "Turning curiosity into a curriculum.",
-    organization: "AI Vice Head — S.T.A.R Union, Cairo",
+    id: "experience-star-union",
+    organization: "S.T.A.R Union",
+    role: "AI Vice Head and organizational leadership",
+    location: "Cairo",
     period: "2025 — 2026",
-    summary:
-      "The technical-leadership layer of the union story: shaping how an AI community learns, collaborates, and explains itself — mentoring students and building an active AI community around the union.",
-    details: [
-      "The role title is documented by the union's own announcement poster for the season.",
-      "Presented separately from Head of AI at Microsoft Student Club; the two roles are not merged.",
-      "No unsupported team size, promotion, or reporting relationship is claimed.",
+    description:
+      "I contribute to AI initiatives, technical activities, and mentoring opportunities within S.T.A.R Union. Alongside technical leadership, I support team coordination, student engagement, and the planning and execution of collaborative activities.",
+    highlights: [
+      "AI Vice Head for the 2025 — 2026 season — role documented by the union's own announcement poster.",
+      "Mentoring program (2026): technical sessions with union members.",
+      "Team coordination, student engagement, and collaborative activity planning.",
     ],
-    image: "/images/star-union/558161862_122208285998047131_4299714710762306921_n - Copy.jpg",
-    imageAlt: "S.T.A.R Union announcement poster naming Mohamed Ayman as AI Vice Head",
-    imagePlate: true,
-    evidence: [
-      { src: "/images/star-union/photo_2026-10-17_21-04-36.jpg", label: "Mentoring session with members" },
-      { src: "/images/star-union/photo_2026-10-17_21-03-48.jpg", label: "Working through problems together" },
+    gallery: [
+      {
+        src: "/images/star-union/558161862_122208285998047131_4299714710762306921_n - Copy.jpg",
+        label: "AI Vice Head — announcement",
+        alt: "S.T.A.R Union announcement poster naming Mohamed Ayman as AI Vice Head",
+        fit: "contain",
+        plate: true,
+      },
+      {
+        src: "/images/star-union/photo_2026-10-17_21-04-36.jpg",
+        label: "Mentoring program (2026)",
+        alt: "Mentoring session with union members",
+      },
+      {
+        src: "/images/star-union/photo_2026-10-17_21-04-11.jpg",
+        label: "Study & planning",
+        alt: "Team study and planning session",
+      },
+      {
+        src: "/images/star-union/photo_2026-10-17_21-03-48.jpg",
+        label: "Working session",
+        alt: "Collaborative working session and problem-solving activities",
+      },
     ],
   },
+];
+
+export const portfolioSections = [
   {
     id: "internship",
     index: "04",
@@ -117,7 +131,7 @@ export const portfolioSections = [
   },
   {
     id: "research",
-    index: "06",
+    variant: "research-showcase",
     eyebrow: "RESEARCH CONTRIBUTIONS",
     title: "Evidence before certainty.",
     organization: "University of Tokyo GCI World (Matsuo-Iwasawa Lab) · IEEE MIUCC26",
@@ -129,11 +143,26 @@ export const portfolioSections = [
       "Co-author on seasonal-pattern research using the Kepler Optimization Algorithm (IEEE MIUCC26).",
       "Multilingual, low-resource AI research proposals (SINA) remain proposals — they are labelled as such, never as completed results.",
     ],
-    image: "/images/research/photo_2026-09-17_15-26-58.jpg",
-    imageAlt: "University of Tokyo graduate research programme documentation",
-    evidence: [
-      { src: "/images/cert_utokyo_gci.jpg", label: "GCI World — Data Science & ML (The University of Tokyo)" },
-    ],
+    paper: {
+      title:
+        "Adaptive Noise Differential Privacy for Optimizing Privacy–Utility Trade-off in Federated Learning Systems",
+      field: "Federated learning · differential privacy",
+      author: "Mohamed Ayman",
+      programme:
+        "MIUCC 26 — 6th International Mobile, Intelligent, and Ubiquitous Computing Conference",
+      venue: "Misr International University · IEEE Egypt Section (Record #70118)",
+      status: "Certificate for Contribution — September 16–17, 2026",
+    },
+    certificate: {
+      image: "/images/research/cert_federated_learning_dp.jpg",
+      alt: "MIUCC 26 Certificate for Contribution awarded to Mohamed Ayman for the federated learning differential privacy paper",
+      caption: "MIUCC 26 — Certificate for Contribution · signed by Prof. Ayman Bahaa-Eldin, Conference Chair",
+    },
+    context: {
+      image: "/images/research/photo_2026-09-17_15-26-58.jpg",
+      alt: "University of Tokyo graduate research programme documentation",
+      caption: "GCI World programme documentation — Matsuo-Iwasawa Laboratory",
+    },
   },
   {
     id: "samsung",

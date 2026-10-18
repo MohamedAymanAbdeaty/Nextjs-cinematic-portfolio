@@ -9,6 +9,9 @@ import Lightbox, { openLightbox } from "@/components/Lightbox";
 import Reveal from "@/components/Reveal";
 import StoryChat from "@/components/StoryChat";
 import CertificateCarousel from "@/components/CertificateCarousel";
+import Experience from "@/components/Experience";
+import ResearchShowcase from "@/components/ResearchShowcase";
+import ProjectSequence from "@/components/ProjectSequence";
 import { site } from "@/data/profile";
 import { portfolioProjects, portfolioSections } from "@/data/portfolio";
 import { certifications, certCategories } from "@/data/certifications";
@@ -82,7 +85,7 @@ function Certifications() {
   return (
     <section id="certifications" className="portfolio-section portfolio-section--proof">
       <div className="portfolio-section__index">
-        <span>09</span>
+        <span>07</span>
         <span className="portfolio-section__rule" aria-hidden="true" />
         <span>PROOF // CREDENTIALS</span>
       </div>
@@ -151,7 +154,7 @@ export default function Home() {
               </h1>
             </Reveal>
             <Reveal delay={260}>
-              <a className="btn-solid" href="#microsoft">Enter the experience <span aria-hidden="true">↓</span></a>
+              <a className="btn-solid" href="#experience">Enter the experience <span aria-hidden="true">↓</span></a>
             </Reveal>
             <p className="doc-caption portfolio-hero__caption">
               Cairo &amp; New Mansoura, Egypt — in front of the room, and inside the system.
@@ -166,58 +169,43 @@ export default function Home() {
           <p>Each chapter below keeps a role, an organization, and an image in their proper place. The visual language is borrowed from editorial storytelling; the evidence is Mohamed&rsquo;s own.</p>
         </section>
 
-        {portfolioSections.map((section, index) => <ExperienceSection key={section.id} section={section} index={index} />)}
+        <Experience />
+
+        {portfolioSections.map((section, index) =>
+          section.variant === "research-showcase" ? (
+            <ResearchShowcase key={section.id} section={section} index={index + 1} />
+          ) : (
+            <ExperienceSection key={section.id} section={section} index={index + 1} />
+          )
+        )}
 
         <Certifications />
 
         <section id="projects" className="portfolio-section">
           <div className="portfolio-section__index">
-            <span>10</span>
+            <span>08</span>
             <span className="portfolio-section__rule" aria-hidden="true" />
             <span>SELECTED PROJECTS</span>
           </div>
-          <div className="portfolio-section__grid">
-            <div>
-              <Reveal>
-                <p className="eyebrow">10 // SELECTED BUILDS</p>
-                <h2 className="display portfolio-section__title">Systems that explain themselves.</h2>
-                <p className="portfolio-section__summary">
-                  Selected for range: cloud AI infrastructure, agentic workflows with guardrails,
-                  and kernel-level systems code. Each line links to the repository — nothing is
-                  claimed beyond what the code shows.
-                </p>
-              </Reveal>
-            </div>
-            <div className="portfolio-section__media portfolio-section__media--certs">
-              <ul className="project-list">
-                {portfolioProjects.map((project) => (
-                  <li key={project.title}>
-                    <a className="project-row" href={project.href} target="_blank" rel="noopener noreferrer">
-                      {project.image ? (
-                        <span className="project-row__thumb">
-                          {/* eslint-disable-next-line @next/next/no-img-element */}
-                          <img src={project.image} alt={project.alt || ""} loading="lazy" />
-                        </span>
-                      ) : (
-                        <span className="project-row__thumb project-row__thumb--empty" aria-hidden="true">↗</span>
-                      )}
-                      <span className="project-row__body">
-                        <strong>{project.title}</strong>
-                        <small>{project.type}</small>
-                        <span className="project-row__description">{project.description}</span>
-                      </span>
-                      <span aria-hidden="true">↗</span>
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
+          <div className="projects-intro">
+            <Reveal>
+              <p className="eyebrow">08 // SELECTED BUILDS</p>
+              <h2 className="display portfolio-section__title">Systems that explain themselves.</h2>
+              <p className="portfolio-section__summary">
+                Selected for range: cloud AI infrastructure, agentic workflows with guardrails,
+                and kernel-level systems code. Each line links to the repository — nothing is
+                claimed beyond what the code shows.
+              </p>
+            </Reveal>
           </div>
+          <Reveal delay={80}>
+            <ProjectSequence projects={portfolioProjects} />
+          </Reveal>
         </section>
 
         <section id="next" className="portfolio-contact">
           <div>
-            <p className="eyebrow">11 // THE NEXT CHAPTER</p>
+            <p className="eyebrow">09 // THE NEXT CHAPTER</p>
             <h2 className="display">Let&rsquo;s build something that can be trusted.</h2>
             <p>Open to AI engineering roles, research collaboration, and focused product work.</p>
           </div>
