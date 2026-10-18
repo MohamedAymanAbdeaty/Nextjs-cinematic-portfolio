@@ -98,17 +98,20 @@ function Certifications() {
               21 verified credentials on one rotating ring. Drag the circle — or click any plate —
               and every original document stays one click away, uncropped and readable.
             </p>
-            <ul className="cert-groups">
+          </Reveal>
+        </div>
+        <div className="portfolio-section__media portfolio-section__media--certs">
+          <Reveal delay={100}>
+            <ul className="cert-groups cert-groups--aside">
               {certCategories.filter((c) => c.key !== "all").map((c) => (
                 <li key={c.key}><span>{c.label}</span><span>{String(c.count).padStart(2, "0")}</span></li>
               ))}
             </ul>
           </Reveal>
         </div>
-        <div className="portfolio-section__media portfolio-section__media--certs">
-          <CertificateCarousel certificates={certifications} />
-        </div>
       </div>
+
+      <CertificateCarousel certificates={certifications} />
     </section>
   );
 }

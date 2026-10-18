@@ -59,8 +59,9 @@ export default function CertificateCarousel({ certificates }) {
       const w = stage.clientWidth || 1200;
       const cardW = clamp(w * 0.16, 108, 210);
       const metaH = clamp(cardW * 0.48, 88, 94);
-      const cardH = cardW * 0.75 + metaH + 14;
-      st.radius = clamp((count * cardW * 1.18) / (2 * Math.PI), cardW * 1.4, 980);
+      const cardH = cardW * 0.75 + metaH + 24;
+      const ringCirc = (count * cardW * 1.18) / (2 * Math.PI);
+      st.radius = clamp(ringCirc, cardW * 1.4, Math.min(980, Math.max(w * 0.62, cardW * 1.4)));
       stage.style.perspective = `${Math.round(st.radius * 2.4)}px`;
       stage.style.setProperty("--card-w", `${cardW.toFixed(1)}px`);
       stage.style.setProperty("--card-meta-h", `${metaH.toFixed(1)}px`);
@@ -260,7 +261,7 @@ export default function CertificateCarousel({ certificates }) {
                   type="button"
                   className="cert-carousel__card"
                   data-cert-index={i}
-                  style={{ transform: `rotateY(${(i * step).toFixed(3)}deg) translateZ(var(--radius, 700px))` }}
+                  style={{ transform: `rotateY(${(i * step).toFixed(3)}deg) translateZ(var(--radius, 640px))` }}
                   aria-label={`Open ${cert.name}, issued by ${cert.issuer} (${cert.date})`}
                   onClick={() => {
                     if (s.current.moved > 8) return;

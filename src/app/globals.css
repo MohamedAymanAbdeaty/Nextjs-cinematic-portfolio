@@ -713,6 +713,7 @@ html::-webkit-scrollbar { display: none; }
   text-transform: uppercase;
 }
 .cert-groups li span:last-child { color: var(--sig); }
+.cert-groups--aside { margin-top: 0; max-width: none; }
 .portfolio-section__media--certs { max-width: 42rem; }
 .cred-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0.85rem; }
 .cred-card {
@@ -742,11 +743,17 @@ html::-webkit-scrollbar { display: none; }
 .cred-card__date { font: 0.58rem/1.4 var(--font-mono); color: var(--sig); letter-spacing: 0.08em; }
 
 /* ── Certificate circle — 3D rotating credential ring ─────────────── */
-.cert-carousel { margin-top: 1.5rem; }
+.cert-carousel { margin-top: clamp(2.5rem, 5vw, 4rem); }
 
 .cert-carousel__stage {
   position: relative;
   height: clamp(380px, 55vw, 580px);
+  --card-w: 170px;
+  --card-h: 260px;
+  --card-meta-h: 88px;
+  --radius: 640px;
+  perspective: 1600px;
+  overflow: hidden;
   outline: none;
   touch-action: pan-y;
   user-select: none;
@@ -759,7 +766,6 @@ html::-webkit-scrollbar { display: none; }
   display: flex;
   align-items: center;
   justify-content: center;
-  perspective: 1400px;
   transform-style: preserve-3d;
 }
 
@@ -790,6 +796,7 @@ html::-webkit-scrollbar { display: none; }
   flex-direction: column;
   gap: 0.45rem;
   padding: 0.5rem;
+  overflow: hidden;
   background: #082526;
   border: 1px solid rgba(242, 238, 230, 0.12);
   backface-visibility: hidden;
